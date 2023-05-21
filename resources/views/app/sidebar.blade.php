@@ -6,10 +6,10 @@
     </div>
 
     <ul class="list-unstyled px-2 ">
-        <li class="{{ $page === 'dashboard' ? 'active' : '' }}"><a href="{{ route('dashboard') }}" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-house"></i> Dashboard</a></li>
-        <li class="{{ $page === 'barang' ? 'active' : '' }}"><a href="{{ route('barang.index') }}" class="text-decoration-none px-3 py-2 d-block" ><i class="fa-solid fa-door-open icon-sidebar"></i> Stok Barang</a></li>
-        <li class="{{ $page === 'barangmasuk' ? 'active' : '' }}"><a href="{{ route('barangmasuk.index') }}" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-door-open icon-sidebar"></i> Barang Masuk</a></li>
-        <li class="{{ $page === 'barangkeluar' ? 'active' : '' }}"><a href="{{ route('barangkeluar.index') }}" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-door-closed"></i> Barang Keluar</a></li>
-        <li class="{{ $page === 'user' ? 'active' : '' }}"><a href="{{ route('user.index') }}" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-user"></i>  User</a></li>
+        <li class="{{ $page === 'dashboard' ? 'active' : '' }}"><a href="{{ route('dashboard') }}" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-house" style="margin-right:4px"></i> Dashboard</a></li>
+        <li class="{{ $page === 'barang' ? 'active' : '' }}"><a href="{{ route('barang.index') }}" class="text-decoration-none px-3 py-2 d-block" ><i class="fa-solid fa-door-open icon-sidebar" style="margin-right:4px"></i> Stok Barang</a></li>
+        <li class="{{ $page === 'barangmasuk' ? 'active' : '' }}"><a href="{{ route('barangmasuk.index') }}" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-door-open icon-sidebar" style="margin-right:4px"></i> Barang Masuk</a></li>
+        <li class="{{ $page === 'barangkeluar' ? 'active' : '' }}"><a href="{{ route('barangkeluar.index') }}" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-door-closed" style="margin-right:4px"></i> Barang Keluar</a></li>
+        <li class="{{ $page === 'user' ? 'active' : '' }}"><a href="{{ route('user.index') }}" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-user" style="margin-right:8px"></i>  User</a></li>
     </ul>
 </div>

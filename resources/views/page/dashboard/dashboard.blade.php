@@ -1,10 +1,7 @@
 @extends('app.app')
 
 @section('container')
-<div class="">
-
-</div>
-<div class="dashboard-content px-3 pt-4">
-    <h2 class="fs-5">Dashboard</h2>
+<div class="d-flex justify-content-center" style="height: 100vh; align-content: center; flex-wrap:wrap-reverse;">
+    <h2 class="align-items-center text-center" style="font-size: 40px">Selamat Datang Di Sistem Informasi Manajemen Barang Toko Cat Citra Warna</h2>
 </div>
 @endsection

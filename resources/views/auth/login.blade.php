@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>SIMAPRO</title>
+    <title>Tes</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -21,7 +21,7 @@
             <div class="container">
                 <div class="row d-flex justify-content-center align-items-center vh-100">
                     <div class="col-md-6">
-                        <div class="card" style="border-radius: 8%">
+                        <div class="card" style="border-radius: 10px">
                             <div class="card-body">
                                 <form method="POST" action="{{ route('login') }}">
                                     @csrf

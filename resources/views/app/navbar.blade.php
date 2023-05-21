@@ -1,7 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light" id="navbar-top">
     <div class="container-fluid">
         <div class="d-flex justify-content-between d-md-none d-block">
-            <a class="navbar-brand fs-4" href="#">Navbar</a>
             <button class="btn px-1 py-0" id="open-btn"><i class="fa-solid fa-bars"></i></button>
         </div>
         

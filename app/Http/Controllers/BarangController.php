@@ -27,6 +27,17 @@ class BarangController extends Controller
     public function store(Request $request)
     {   
         $input = $request->all();
+
+        $error_validasi = NULL;
+
+        $exsist = Barang::where('namaBarang',$input['namaBarang'])->count();
+        if($exsist > 0){
+            $error_validasi['namaBarang'] ='Nama Barang sudah ada!';
+        }
+        if($error_validasi != NULL){
+            return redirect()->back()->withInput()->withErrors(['msg'=>$error_validasi]);
+        }
+
         $barang = Barang::create($input);
         if($barang){
             return redirect()->route('barang.index')->withErrors(['msg'=>'success']);
@@ -34,12 +45,6 @@ class BarangController extends Controller
             return redirect()->route('barang.index')->withErrors(['msg'=>'failed']);
         }
     }
-
-    public function show($id)
-    {
-        
-    }
-
     
     public function edit($id)
     {   
@@ -52,6 +57,16 @@ class BarangController extends Controller
     {   
         $input = $request->all();
 
+        $error_validasi = NULL;
+
+        $exsist = Barang::where('namaBarang',$input['namaBarang'])->count();
+        if($exsist > 0){
+            $error_validasi['namaBarang'] ='Nama Barang sudah ada!';
+        }
+        if($error_validasi != NULL){
+            return redirect()->back()->withInput()->withErrors(['msg'=>$error_validasi]);
+        }
+
         $data = Barang::find($id);
         $data = $data->update($input);
 
@@ -61,10 +76,5 @@ class BarangController extends Controller
         }else{
             return redirect()->route('barang.index')->withErrors(['msg'=>'failed']);
         }
-    }
-
-    public function destroy($id)
-    {   
-        
     }
 }

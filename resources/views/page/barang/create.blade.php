@@ -22,6 +22,13 @@
                                 <div class="col-md-6 mb-3">
                                     <div class="form-group">
                                         <label for="namaBarang" class="mb-1">Nama Barang</label>
+                                        @if(isset($errors->all()['namaBarang']))
+                                            <span class="alert" style="color:red; margin: 0px; padding:0px; line-height:0" >
+                                                <p style="margin: 0px;padding:0px">
+                                                    {{ $errors->all()['namaBarang'] }}
+                                                </p>
+                                            </span>
+                                        @endif
                                         <input type="text" name="namaBarang" class="form-control" required maxlength="50">
                                     </div>
                                 </div>
